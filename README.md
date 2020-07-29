@@ -5,6 +5,9 @@ We can use AWS Instance Scheduler to stop and start your instances based on a sc
 
 However I wanted to extend this solution further. I want to shutdown all our AWS EC2 test instances not only after office hours and weekends, but also during Malaysia Public Holidays.
 
+## Script
+You can find the python script [here](https://github.com/hadriane/custom_designed_aws_instance_scheduler/blob/master/script/aws_instance_scheduler.py)
+
 ## Tools
 
 |                 |    Tools   |                     |
