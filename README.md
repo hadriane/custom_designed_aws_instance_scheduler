@@ -14,7 +14,7 @@ However I wanted to extend this solution further. I want to shutdown all our AWS
 |   AWS DynamoDB  |   AWS IAM  | Google Calendar API |
 
 ## Flowchart
-![Custom Instance Scheduler Flowchart](../images/aws_instance_scheduler.jpg)
+![Custom Instance Scheduler Flowchart](https://github.com/hadriane/custom_designed_aws_instance_scheduler/blob/master/images/aws_instance_scheduler.jpg)
 
 ## Steps
 1. **Google Calendar API**
