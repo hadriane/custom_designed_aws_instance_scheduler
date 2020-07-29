@@ -196,8 +196,7 @@ def lambda_handler(event=None, context=None):
         dynamodb_delete()  # Delete all items in DynamoDB table
         dynamodb_update()  # Query Google Calendar API and update DynamoDB
 
-    # Check if there are instances to shutdown
-    if ec2_get_instances():
+    if ec2_get_instances():  # Check if there are instances to shutdown
     # Check if today is not shutdown days
         if compare_day() is not True:
 
