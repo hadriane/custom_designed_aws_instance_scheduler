@@ -203,20 +203,16 @@ def lambda_handler(event=None, context=None):
             # Check if it's a holiday
             if compare_holiday_date() is True:
                 ec2_stop_instances()  # It's a shutdown day. Shutdown EC2 instances
-                # print ("Shutting down instance")
             else:
 
                 # Check if it's shutdown time
                 if compare_time() is True:
                     ec2_stop_instances()  # It's within shutdown time. Shutdown EC2 instances
-                    # print ("Shutting down instance")
                 else:
                     ec2_start_intances()  # It's not within shutdown time. Boot up EC2 instances
-                    # print ("Booting up instance")
 
         else:
             ec2_stop_instances()  # It's a shutdown day. Shutdown EC2 instances
-            # print ("Shutting down instance")
 
 
 lambda_handler()
